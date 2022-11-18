@@ -3,32 +3,26 @@ This package is written for self learning, reference and beginner guide to ROS2.
 
 
 ### Create ROS2 Package
-#### With Cmake Build System
-```
-ros2 pkg create --build-type ament_cmake <package_name>
-```
-#### With Python Build System
-```
-ros2 pkg create --build-type ament_python <package_name>
-```
+
+| Build System|Command|
+|---|---|
+| With Cmake| `ros2 pkg create --build-type ament_cmake <package_name>`|
+| With Python| `ros2 pkg create --build-type ament_python <package_name>`|
+
+
 ### Build
-```
-colcon build
-```
-Build only specify package
-```
-colcon build --packages-select my_package
-```
+
+|Build System|Command|
+|---|---|
+| Build all package in src| `colcon build`|
+| Build single package| `colcon build --packages-select my_package`|
+
 ### Source the setup file
-```
-. install/setup.bash
-```
-or in .bashrc
-```
-source ~/ws_ros2_tutor/install/setup.bash
-```
 
-
+| Source Package|Command|
+|---|---|
+| Single Terminal | `source install/setup.bash`|
+| Auto source ~/.bashrc| `source ~/ws_ros2_tutor/install/setup.bash`|
 
 
 ### References
